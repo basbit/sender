@@ -1,0 +1,5 @@
+.idea
+copyright
+www/vendor
+www/composer.lock
+www/logs/

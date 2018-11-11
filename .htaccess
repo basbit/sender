@@ -1,0 +1,26 @@
+# временная зона
+php_value date.timezone "Etc/GMT-3"
+
+# This first part should be done by the webserver,
+# if not than thing about to change you hoster but I put it here:
+# Preventing direct access to any .ht file (.htaccess, .htpasswd, etc.)
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>
+
+Options +FollowSymlinks
+Options -Indexes
+
+# Start to Rewrite
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/www/public
+RewriteRule (.*) www/public/$1
+
+# or if request is a real file
+RewriteCond %{REQUEST_FILENAME} !-f
+# or if request is a real directory but not the root directory
+RewriteCond %{REQUEST_URI} ^/?$ [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+# Rewrite the rest to the index.php file in your public folder
+RewriteRule ^.*$ /www/public/index.php [NC,L]

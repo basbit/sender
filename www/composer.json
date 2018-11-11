@@ -1,0 +1,45 @@
+{
+	"name": "sender.ru",
+	"require": {
+		"php": ">=7.1.0",
+		"slim/slim": "^3.1",
+		"shameerc/slim3-aura-di": "^1.0",
+		"monolog/monolog": "^1.23.0",
+		"ramsey/uuid": "^3.7",
+		"phpmailer/phpmailer": "^5.2",
+		"php-amqplib/php-amqplib": "^2.6"
+	},
+	"require-dev": {
+		"phpunit/phpunit": ">=4.8 < 6.0",
+		"squizlabs/php_codesniffer": "*",
+		"symfony/var-dumper": "^4.0",
+		"mockery/mockery": "^0.9.9"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"App\\": [
+				"src/App/"
+			],
+			"Core\\": [
+				"src/Core/"
+			],
+			"Domain\\": [
+				"src/Domain/"
+			],
+			"Repository\\": [
+				"src/Repository/"
+			],
+			"Tests\\": "tests/"
+		}
+	},
+	"config": {
+		"process-timeout": 0
+	},
+	"scripts": {
+		"start": "php -S localhost:8080 -t public",
+		"test": "phpunit tests > logs/reports/test_report.txt",
+		"testWithLog": "phpunit tests",
+		"cli": "php public/index.php",
+		"psr2": "vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR2 --extensions=php src/ > logs/reports/analizator_report.txt"
+	}
+}

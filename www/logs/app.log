@@ -1,0 +1,14 @@
+[2018-11-11 23:00:52] sender.INFO: Mail was sent [] {"uid":"9fc51e5"}
+[2018-11-11 23:00:52] sender.ERROR: Service not defined: 'SendMailJob1' [] {"uid":"3845515"}
+[2018-11-11 23:01:49] sender.INFO: Mail was sent [] {"uid":"e2a89ae"}
+[2018-11-11 23:01:49] sender.ERROR: Service not defined: 'SendMailJob1' [] {"uid":"33ccf13"}
+[2018-11-11 23:02:10] sender.INFO: Mail was sent [] {"uid":"41838d8"}
+[2018-11-11 23:02:10] sender.ERROR: Service not defined: 'SendMailJob1' [] {"uid":"3278c0a"}
+[2018-11-11 23:03:11] sender.INFO: Mail was sent [] {"uid":"2f3a238"}
+[2018-11-11 23:03:11] sender.ERROR: Service not defined: 'SendMailJob1' [] {"uid":"1dde133"}
+[2018-11-11 23:03:58] sender.INFO: Mail was sent [] {"uid":"37f21ba"}
+[2018-11-11 23:03:58] sender.ERROR: Service not defined: 'SendMailJob1' [] {"uid":"f8f9c7f"}
+[2018-11-11 23:04:17] sender.INFO: Mail was sent [] {"uid":"23738e3"}
+[2018-11-11 23:04:17] sender.ERROR: Service not defined: 'SendMailJob1' [] {"uid":"03bd66c"}
+[2018-11-11 23:04:36] sender.INFO: Mail was sent [] {"uid":"ee8c295"}
+[2018-11-11 23:04:36] sender.ERROR: Service not defined: 'SendMailJob1' [] {"uid":"01afae6"}

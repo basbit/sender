@@ -7,12 +7,12 @@ In this service implemented DDD architecture and SOLID, KISS, YANGI specificatio
 
 For change enviroiment edit /www/app.pph and set constant ENVIRONMENT dev or prod
 
-For configure rabbitMQ settings edit /www/config/env/dev or /www/config/env/prod
+For configure mailer settings and rabbitMQ settings edit /www/config/env/dev or /www/config/env/prod
 
 For add message to queue just execute command
 ```bash
 cd www
-composer cli /producer to=test@test.ru from=test@test.ru message=test subject=test
+composer cli /producer to=test@test.ru message=test subject=test
 ```
 
 ___
